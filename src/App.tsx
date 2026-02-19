@@ -10,6 +10,8 @@ import Dashboard from "./pages/Dashboard";
 import Catalog from "./pages/Catalog";
 import Analytics from "./pages/Analytics";
 import Distributors from "./pages/Distributors";
+import Products from "./pages/Products";
+import ProductDetail from "./pages/ProductDetail";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -33,6 +35,8 @@ export default function App() {
               <Route element={<AppLayout onLogout={handleLogout} role={role} />}>
                 <Route path="/" element={<Navigate to="/dashboard" replace />} />
                 <Route path="/dashboard" element={<Dashboard />} />
+                <Route path="/products" element={<Products />} />
+                <Route path="/products/:id" element={<ProductDetail />} />
                 <Route path="/catalog" element={<Catalog />} />
                 <Route path="/analytics" element={<Analytics />} />
                 <Route path="/distributors" element={<Distributors />} />

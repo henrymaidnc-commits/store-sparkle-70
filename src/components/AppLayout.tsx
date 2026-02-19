@@ -8,11 +8,13 @@ import {
   Menu,
   X,
   Store,
+  Package,
 } from "lucide-react";
 import { useState } from "react";
 
 const navItems = [
   { to: "/dashboard", label: "Dashboard", icon: LayoutDashboard },
+  { to: "/products", label: "Products", icon: Package },
   { to: "/catalog", label: "Catalog", icon: ShoppingBag },
   { to: "/analytics", label: "Analytics", icon: BarChart3 },
   { to: "/distributors", label: "Distributors", icon: Truck },
